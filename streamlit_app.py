@@ -1,5 +1,5 @@
 import streamlit as st
-from src.agent import PDFQnAAgent
+from agent import PDFQnAAgent
 import tempfile
 import os
 
@@ -40,3 +40,4 @@ if st.session_state.agent:
                 answer = st.session_state.agent.ask(question, top_k=5)
             st.write("### Answer:")
             st.write(answer)
+
