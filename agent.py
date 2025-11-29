@@ -13,7 +13,7 @@ import io
 from sentence_transformers import SentenceTransformer
 from sentence_transformers import util
 import re
-from .logging_config import setup_logging
+from logging_config import setup_logging
 import random
 
 
@@ -522,5 +522,6 @@ class PDFQnAAgent:
 
         self.logger.info("Summarization complete.")
         return summary.strip()
+
 
 
