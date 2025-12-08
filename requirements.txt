@@ -1,0 +1,11 @@
+faiss-cpu
+pymupdf
+pytesseract
+Pillow
+transformers
+sentence-transformers
+torch==2.1.0
+accelerate
+numpy
+python-dotenv
+requests
