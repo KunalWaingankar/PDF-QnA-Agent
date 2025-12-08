@@ -1,3 +1,4 @@
+streamlit
 faiss-cpu
 pymupdf
 pytesseract
