@@ -31,9 +31,9 @@ class PDFQnAAgent:
             self.logger.addHandler(handler)
 
         # --- Load Captioning Model for Images ---
-        self.logger.info("Loading BLIP captioning model...")
-        self.processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-base")
-        self.caption_model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-base")
+        #self.logger.info("Loading BLIP captioning model...")
+        #self.processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-base")
+        #self.caption_model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-base")
 
         # --- Sentence Embedding Model ---
         self.logger.info("Loading sentence transformer model...")
@@ -522,6 +522,7 @@ class PDFQnAAgent:
 
         self.logger.info("Summarization complete.")
         return summary.strip()
+
 
 
 
